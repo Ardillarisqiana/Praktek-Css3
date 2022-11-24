@@ -1,0 +1,67 @@
+/* FONT */
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('OpenSans-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Style Utama*/
+body {
+    font: 16px/36px 'reguler', 'Arial Narrow', arial, sans-serif ;
+    background-color: #ddd;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 50px 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px wheat;
+}
+
+.container {
+    width: 600px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, .3);
+}
+.galeri li {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border: 5px solid #ddd;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+.galeri li, .galeri li img, .galeri li span {
+    border-radius: 50%;
+}
+ 
+.galeri li span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(200, 200, 200, .5);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: black;
+    text-shadow: 1px 1px 1px blue;
+    opacity: 0;
+    transform: scale(0);
+    transition: .3s;
+}
+
+.gallery li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+.clear {
+    clear: both;
+}
